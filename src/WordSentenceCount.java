@@ -90,6 +90,7 @@ public class WordSentenceCount implements Runnable {
         	if(sentenceDelim.contains(readingChar)) {
         		centence = centence.trim();
         		threadPool.submit(new WordSentenceCount(centence, wordCountMap));
+        		System.out.println("["+centence+"]");
         		totalSentence ++;
         		centence = "";
         	} else if(val == 10 || val == 13){
@@ -105,7 +106,7 @@ public class WordSentenceCount implements Runnable {
         	System.out.println(entry.getKey() + " " + entry.getValue());
             totalWord += entry.getValue();
         }
-      
+        System.out.println("Word Count  : " + totalWord);
         System.out.println("Sentence Count  : " + totalSentence);
         System.out.println("Avg. Word Count : " + (totalWord / (totalSentence == 0 ? 1 : totalSentence)));
     }
