@@ -18,13 +18,12 @@ Like below;
 
 ![](https://github.com/emrahseren/ThreadQueue/blob/master/run.JPG)
 
-# Explanation
+# Explanation 
 Used ExecutorService for thread pool 
 Ex : Executors.newFixedThreadPool(5);
 
 Used ConcurrentHashMap for ThreadSafe Map <String(word), Integer(count)>
 Ex : ConcurrentHashMap<String,Integer>();
-
 
 Used Stream.sorted.collection to order by value of Map
 Ex : UnsortedMap.stream().sorted(Entry.comparingByValue(Comparator.reverseOrder())).collect...
