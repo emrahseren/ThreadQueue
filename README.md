@@ -6,7 +6,9 @@ Kelime & Cumle Sayaci
 ## Clone
 
 > git clone https://github.com/emrahseren/ThreadQueue.git
+
 > cd ThreadQueue
+
 > javac WordSentenceCount.java
 
 Then you shoud pass txt file path to the application to read and parse with word and centences.
